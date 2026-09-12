@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-labelledby="title desc">
+  <title id="title">Comparison of capability, compliance, StrongREJECT score, and effective-dangerous-capability proxy</title>
+  <desc id="desc">The base model scored 88.8 percent on WMDP-Bio, 98.6 percent compliance, 98.4 percent mean StrongREJECT, and 87.5 percent binary EDC. The large model scored 91.2, 91.2, 90.8, and 83.1 percent respectively. Both models have complete capability and propensity coverage.</desc>
+  <rect width="1000" height="610" fill="#ffffff"/>
+  <style>
+    text { font-family: Inter, Arial, sans-serif; fill: #18212f; }
+    .title { font-size: 24px; font-weight: 600; }
+    .subtitle, .note { font-size: 14px; fill: #526071; }
+    .axis { font-size: 13px; fill: #526071; }
+    .label { font-size: 15px; font-weight: 600; }
+    .value { font-size: 14px; font-weight: 600; }
+    .grid { stroke: #d9dee7; stroke-width: 1; }
+  </style>
+  <text x="40" y="42" class="title">Hosted endpoint results</text>
+  <text x="40" y="68" class="subtitle">Percent; higher is greater capability, compliance, harmfulness score, or combined proxy</text>
+
+  <rect x="650" y="31" width="16" height="16" rx="2" fill="#2563eb"/>
+  <text x="674" y="44" class="axis">abliterated-model</text>
+  <rect x="824" y="31" width="16" height="16" rx="2" fill="#e87921"/>
+  <text x="848" y="44" class="axis">large</text>
+
+  <line x1="270" y1="96" x2="270" y2="520" class="grid"/>
+  <line x1="432.5" y1="96" x2="432.5" y2="520" class="grid"/>
+  <line x1="595" y1="96" x2="595" y2="520" class="grid"/>
+  <line x1="757.5" y1="96" x2="757.5" y2="520" class="grid"/>
+  <line x1="920" y1="96" x2="920" y2="520" class="grid"/>
+  <text x="270" y="544" text-anchor="middle" class="axis">0%</text>
+  <text x="432.5" y="544" text-anchor="middle" class="axis">25%</text>
+  <text x="595" y="544" text-anchor="middle" class="axis">50%</text>
+  <text x="757.5" y="544" text-anchor="middle" class="axis">75%</text>
+  <text x="920" y="544" text-anchor="middle" class="axis">100%</text>
+
+  <text x="40" y="133" class="label">WMDP-Bio accuracy</text>
+  <rect x="270" y="110" width="577.0" height="22" rx="3" fill="#2563eb"/>
+  <rect x="270" y="140" width="592.8" height="22" rx="3" fill="#e87921"/>
+  <text x="855" y="126" class="value">88.8%</text>
+  <text x="871" y="156" class="value">91.2%</text>
+
+  <text x="40" y="247" class="label">Non-refusal rate</text>
+  <rect x="270" y="224" width="640.8" height="22" rx="3" fill="#2563eb"/>
+  <rect x="270" y="254" width="592.6" height="22" rx="3" fill="#e87921"/>
+  <text x="919" y="240" class="value">98.6%</text>
+  <text x="871" y="270" class="value">91.2%</text>
+
+  <text x="40" y="361" class="label">Mean StrongREJECT</text>
+  <rect x="270" y="338" width="639.3" height="22" rx="3" fill="#2563eb"/>
+  <rect x="270" y="368" width="590.0" height="22" rx="3" fill="#e87921"/>
+  <text x="918" y="354" class="value">98.4%</text>
+  <text x="869" y="384" class="value">90.8%</text>
+
+  <text x="40" y="475" class="label">Binary EDC proxy</text>
+  <rect x="270" y="452" width="568.8" height="22" rx="3" fill="#2563eb"/>
+  <rect x="270" y="482" width="540.4" height="22" rx="3" fill="#e87921"/>
+  <text x="847" y="468" class="value">87.5%</text>
+  <text x="819" y="498" class="value">83.1%</text>
+
+  <text x="40" y="581" class="note">Both models: 1,273 capability questions and 283 parsed propensity judgments.</text>
+</svg>

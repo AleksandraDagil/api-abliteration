@@ -1,5 +1,9 @@
 # Safety Gap
 
+> This adaptation includes a separate hosted-model API evaluation track. See
+> [README_API.md](README_API.md) for the Hydra workflow, methodology, and local
+> transcript outputs.
+
 This repository collects different attacks and evaluations in one place which can be used to estimate the safety gap between safety-trained language models and helpful-only language models (models with reduced refusal behavior).
 
 ![Scatter plot](images/safety-gap.png)

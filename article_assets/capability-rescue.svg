@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Capability scoring before and after relaxed parsing and length-limit rescue</title>
+  <desc id="desc">For the base model, strict parsing yielded 1017 correct, 85 wrong, and 171 invalid; relaxed parsing yielded 1047 correct, 91 wrong, and 135 invalid; rescue yielded 1130 correct, 143 wrong, and zero invalid. For the large model, the corresponding counts were 812, 54, 407; then 1158, 112, 3; then 1161, 112, zero.</desc>
+  <rect width="1100" height="720" fill="#ffffff"/>
+  <style>
+    text { font-family: Inter, Arial, sans-serif; fill: #18212f; }
+    .title { font-size: 24px; font-weight: 600; }
+    .subtitle, .note { font-size: 14px; fill: #526071; }
+    .axis { font-size: 13px; fill: #526071; }
+    .model { font-size: 17px; font-weight: 600; }
+    .row { font-size: 14px; }
+    .count { font-size: 13px; font-weight: 600; }
+    .grid { stroke: #d9dee7; stroke-width: 1; }
+  </style>
+  <text x="40" y="42" class="title">Parsing and length-limit rescue</text>
+  <text x="40" y="68" class="subtitle">Outcome counts across the same 1,273 WMDP-Bio questions</text>
+
+  <rect x="650" y="30" width="16" height="16" rx="2" fill="#2563eb"/>
+  <text x="674" y="43" class="axis">Correct</text>
+  <rect x="746" y="30" width="16" height="16" rx="2" fill="#e87921"/>
+  <text x="770" y="43" class="axis">Incorrect</text>
+  <rect x="866" y="30" width="16" height="16" rx="2" fill="#9aa4b2"/>
+  <text x="890" y="43" class="axis">Parser-invalid</text>
+
+  <line x1="250" y1="104" x2="250" y2="636" class="grid"/>
+  <line x1="437.5" y1="104" x2="437.5" y2="636" class="grid"/>
+  <line x1="625" y1="104" x2="625" y2="636" class="grid"/>
+  <line x1="812.5" y1="104" x2="812.5" y2="636" class="grid"/>
+  <line x1="1000" y1="104" x2="1000" y2="636" class="grid"/>
+
+  <text x="40" y="132" class="model">abliterated-model</text>
+  <text x="40" y="185" class="row">Strict parser</text>
+  <rect x="250" y="162" width="599.2" height="30" fill="#2563eb"/>
+  <rect x="849.2" y="162" width="50.1" height="30" fill="#e87921"/>
+  <rect x="899.3" y="162" width="100.7" height="30" fill="#9aa4b2"/>
+  <text x="1010" y="182" class="count">1,017 / 85 / 171</text>
+
+  <text x="40" y="245" class="row">Relaxed parser</text>
+  <rect x="250" y="222" width="616.9" height="30" fill="#2563eb"/>
+  <rect x="866.9" y="222" width="53.6" height="30" fill="#e87921"/>
+  <rect x="920.5" y="222" width="79.5" height="30" fill="#9aa4b2"/>
+  <text x="1010" y="242" class="count">1,047 / 91 / 135</text>
+
+  <text x="40" y="305" class="row">After rescue</text>
+  <rect x="250" y="282" width="665.8" height="30" fill="#2563eb"/>
+  <rect x="915.8" y="282" width="84.2" height="30" fill="#e87921"/>
+  <text x="1010" y="302" class="count">1,130 / 143 / 0</text>
+
+  <text x="40" y="392" class="model">abliterated-model-large</text>
+  <text x="40" y="445" class="row">Strict parser</text>
+  <rect x="250" y="422" width="478.4" height="30" fill="#2563eb"/>
+  <rect x="728.4" y="422" width="31.8" height="30" fill="#e87921"/>
+  <rect x="760.2" y="422" width="239.8" height="30" fill="#9aa4b2"/>
+  <text x="1010" y="442" class="count">812 / 54 / 407</text>
+
+  <text x="40" y="505" class="row">Relaxed parser</text>
+  <rect x="250" y="482" width="682.2" height="30" fill="#2563eb"/>
+  <rect x="932.2" y="482" width="66.0" height="30" fill="#e87921"/>
+  <rect x="998.2" y="482" width="1.8" height="30" fill="#9aa4b2"/>
+  <text x="1010" y="502" class="count">1,158 / 112 / 3</text>
+
+  <text x="40" y="565" class="row">After rescue</text>
+  <rect x="250" y="542" width="684.0" height="30" fill="#2563eb"/>
+  <rect x="934.0" y="542" width="66.0" height="30" fill="#e87921"/>
+  <text x="1010" y="562" class="count">1,161 / 112 / 0</text>
+
+  <text x="250" y="660" text-anchor="middle" class="axis">0</text>
+  <text x="437.5" y="660" text-anchor="middle" class="axis">318</text>
+  <text x="625" y="660" text-anchor="middle" class="axis">637</text>
+  <text x="812.5" y="660" text-anchor="middle" class="axis">955</text>
+  <text x="1000" y="660" text-anchor="middle" class="axis">1,273</text>
+  <text x="625" y="692" text-anchor="middle" class="note">Questions</text>
+</svg>
